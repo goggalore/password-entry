@@ -1,9 +1,10 @@
 import { describe, expect, it } from '@jest/globals'
 import {
+  capitalizeFirstCharacter,
   checkContainsLowerCase,
   checkContainsNumber,
   checkContainsSpecial,
-  checkContainsUpperCase
+  checkContainsUpperCase, conjoinSentences
 } from '../string-utils'
 
 describe('string-utils.ts', () => {
@@ -165,6 +166,31 @@ describe('string-utils.ts', () => {
       const containsSpecials = checkContainsSpecial(specialString)
 
       expect(containsSpecials).toBe(true)
+    })
+  })
+
+  describe('capitalizeFirstCharacter', () => {
+    it('Capitalizes the first character in a sentence', () => {
+      const sentence = 'never eat soggy waffles'
+      const expectedSentence = 'Never eat soggy waffles'
+
+      expect(capitalizeFirstCharacter(sentence)).toBe(expectedSentence)
+    })
+  })
+
+  describe('conjoinSentences', () => {
+    it('Returns a sentence unmodified if list contains only a single entry', () => {
+      const sentences = [ 'You can\'t change me, this is who I am!' ]
+      const expectedSentence = sentences[0]
+
+      expect(conjoinSentences(sentences)).toBe(expectedSentence)
+    })
+
+    it('Conjoins a list of sentences into a single conjoined string', () => {
+      const sentences = [ 'I like apples', 'oranges', 'pears' ]
+      const expectedSentence = 'I like apples, oranges, and pears'
+
+      expect(conjoinSentences(sentences)).toBe(expectedSentence)
     })
   })
 })
