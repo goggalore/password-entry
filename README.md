@@ -76,6 +76,14 @@ The same can be said for dark/light mode, particularly for accessibility purpose
 
 I also wanted to present something that looked remotely decent.
 
+### Layout Shift
+There's a pretty nasty layout shift that happens when the success/error messages are triggered. This is something a little less
+trivial to handle than other stylistic problems. 
+
+Because style was not outlined in the requirements, I did not want to go overkill.
+
+This is definitely something you would want to address and resolve within a professional application.
+
 ### Accessibility
 
 Accessibility was considered by merely implementing the semantically correct elements.
