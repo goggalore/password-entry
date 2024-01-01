@@ -40,7 +40,7 @@ npm run dev
 ```
 Development mode features HMR
 
-### Runing Tests (optional)
+### Running Tests (optional)
 
 After you have installed dependencies, you can check whether the tests pass
 with 
@@ -89,8 +89,8 @@ This is definitely something you would want to address and resolve within a prof
 Accessibility was considered by merely implementing the semantically correct elements.
 
 ### Commits
-I made commits the same way I would within any project. If you're curious, you can see incrementally how I worked
-(with `git log` or inspecting the commits).
+I made commits the same way I would within any project aside from pushing to main. If you're curious, you can see 
+incrementally how I worked (with `git log` or inspecting the commits).
 
 ### Unit Tests
 
