@@ -1,9 +1,9 @@
 /**
- * This is extra for a demo application, but you would want to consider
- * generalization + consistency + scalability of your applications.
+ * This component is arguably unnecessary since it's only used in one place and has so little content,
+ * but generalization + consistency + scalability of applications is important.
  *
- * Writing generic error components is a good idea so that error pages
- * can share the same error design and its consistent across the website as a whole
+ * So, this was written just to show the idea of a more generic component that could be used
+ * on multiple pages for consistent design and component reuse.
  */
 interface InlineErrorProps {
   errorMessage: string
